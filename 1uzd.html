@@ -1,0 +1,23 @@
+<html>
+	<head>
+	</head>
+	<body onload="draw();">
+		<h1>Fractal Generation</h1>
+		<span id="range"> 0 </span>
+		<input type="range" min="0" max="7" value="0" step="1" onchange="showValue(this.value)">
+		<br>
+		<canvas id="myCanvas" width="500" height="500" style="border: 1px solid black">
+			Your browser does not support the canvas tag.
+		</canvas>
+		<canvas id="myCanvas2" width="500" height="500">
+			Your browser does not support the canvas tag.
+		</canvas>
+		<button onclick="firstStep()"> 1st Transformation </button>
+		<button onclick="secondStep()"> 2nd Transformation </button>
+		<button onclick="thirdStep()"> 3rd Transformation </button>
+		<button onclick="fourthStep()"> 4th Transformation </button>
+
+		<script src="code.js">
+		</script>
+	</body>
+</html>
